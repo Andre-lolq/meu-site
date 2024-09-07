@@ -1,0 +1,35 @@
+/* Estilo global */
+body {
+    font-family: 'Bungee', cursive;
+    background-color: #111;
+    color: #999;
+    background-image: url('https://images8.alphacoders.com/953/953617.png');
+    background-attachment: fixed;
+    filter: grayscale(80%) blur(2px) contrast(120%);
+  }
+  
+  /* Seção de conteúdo */
+  .section-content {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), inset -5px -5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  /* Títulos */
+  h1.title {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), -2px -2px 4px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    animation: glitch 1s infinite alternate;
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translate(2px, 1px) skew(1deg);
+    }
+    100% {
+      transform: translate(-2px, -1px) skew(-1deg);
+    }
+  }
